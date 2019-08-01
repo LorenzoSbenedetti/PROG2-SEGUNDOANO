@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void soma1(int A,int B){
+    int C;
+    C=A+B;
+printf("%d\n",C);
+}
+int soma2(int A,int B){
+    int D;
+    D=0;
+    D=A+B;
+    return D;
+    }
+
+int main() {
+    int A,B,D;
+    scanf ("%d%d",&A,&B);
+    soma1(A,B);
+    printf("%d\n",soma2(A,B));
+    return 0;
+    }
