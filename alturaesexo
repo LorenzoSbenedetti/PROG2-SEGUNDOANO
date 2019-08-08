@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(){
+    int i;
+    float altura;
+    char s,esco;
+    printf("\nInforme sua altura");
+    scanf("%c",&altura);
+    printf("\nInforme seu sexo :");
+    scanf("%c", &s);
+    for (i=0,i++){
+        if(s='H'){
+            alturah
+            }
+}
