@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void carregar(int x[5]){
+    int i;
+    for(i=0;i<5;i++){
+        scanf("%d",&x[i]);
+    }
+}
+void mostra(int c[5]){
+    int i;
+    printf("\nOs valores dos vetores são :\n");
+    for(i=0;i<5; i++){
+        printf("%d\n\n",c[i]);
+    }
+}
+int main(){
+    int k;
+    int c[5];
+    carregar(c);
+    mostra(c);
+}
