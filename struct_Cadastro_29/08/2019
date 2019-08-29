@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+typedef struct cadastro {
+    int ra;
+    int cpf;
+    float mesada;
+}cadastro;
+int main()
+{
+    cadastro aluno={3,1,3};
+    struct cadastro alunoturista;
+    alunoturista=aluno;
+    printf("Ra = %d ,cpf = %d , mesada = %f",aluno.ra , aluno.cpf ,aluno.mesada);
+    printf("Ra = %d ,cpf = %d , mesada = %f",alunoturista.ra , alunoturista.cpf,alunoturista.mesada);
+}
