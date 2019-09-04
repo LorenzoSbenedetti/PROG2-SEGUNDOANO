@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+typedef struct cadastro {
+    int ra;
+    int cpf;
+    float mesada;
+}cadastro;
+int main()
+{
+    cadastro aluno [2];
+    int i;
+    for(i=0;i<2;i++){
+        scanf("%d",&aluno[i].ra);
+        scanf("%d",&aluno[i].cpf);
+        scanf("%f",&aluno[i].mesada);
+        }
+        for(i=0;i<2;i++){
+        printf("\n O RA do aluno e : %d",aluno[i].ra);
+        printf("\nO cpf do aluno e : %d",aluno[i].cpf);
+        printf("\n A mesada do aluno e : %f",aluno[i].mesada);
+    }
+}
