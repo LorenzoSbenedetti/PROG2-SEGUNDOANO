@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+typedef struct {
+        int dia;
+        int mes;
+        int ano;
+ } Tempo;
+typedef struct  {
+    int id;
+    char nome[40];
+    Tempo t;
+}Registro;
+
+
+void alocacao(Registro *p){
+printf("\nDigite o id do usuario :")
+scanf("%d",&p->id);
+printf("\nDigite o nome da pessoa");
+fgets(p.nome,39,stdin);
+printf("\nDigite dia , mes , ano ");
+scanf("%d",&p->t.dia)
+scanf("%d",&p->t.mes);
+scanf("%d",&p->t.ano);
+}
+
+void mostra(Registro p){
+    printf("\nRegistro do usuario e %d  ",p.id);
+    printf("\n Nome do usuario =  %s",p.nome);
+    printf("\n Mes = %d",p.t.mes);
+    printf("\n Ano = %d",p.t.ano);
+    printf("\n Dia = %d",p.t.dia);
+
+}
+
+int main()
+{
+    Registro p;
+    alocacao(&p);
+    mostra(p);
+}
