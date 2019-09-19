@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+
+int recursiva(int x , int y){
+    if (y==1){
+        return x;
+    }
+    else{
+        return x+recursiva(x,y-1);
+    }
+}
+
+int main(){
+    int x,y;
+    scanf("%d%d", &x,&y);
+    printf("%d",recursiva(x,y));
+}
