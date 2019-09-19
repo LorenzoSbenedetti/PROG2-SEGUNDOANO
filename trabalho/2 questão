@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int recursiva (int k, int x){
+    if (k==0){
+        return 0;
+    }
+    else{
+       return 1+recursiva(k-x,x);
+    }
+}
+int main (){
+    int k,x;
+    scanf("%d%d",&k, &x);
+    printf("%d",recursiva(k,x));
+}
