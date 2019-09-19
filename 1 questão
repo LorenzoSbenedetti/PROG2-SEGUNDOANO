@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int recursiva (int n, int a){
+    if (a==0)
+        return 1;
+    else{
+       return n*recursiva(n,a-1);
+    }
+}
+
+int main()
+{
+    int n,a;
+    scanf("%d%d",&n ,&a);
+    printf("%d",recursiva(n,a));
+}
